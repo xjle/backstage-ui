@@ -4,6 +4,9 @@ declare global {
   const ElButton: typeof import('element-plus/es')['ElButton']
   const ElCard: typeof import('element-plus/es')['ElCard']
   const ElConfigProvider: typeof import('element-plus/es')['ElConfigProvider']
+  const ElForm: typeof import('element-plus/es')['ElForm']
+  const ElFormItem: typeof import('element-plus/es')['ElFormItem']
+  const ElInput: typeof import('element-plus/es')['ElInput']
   const ElResult: typeof import('element-plus/es')['ElResult']
 }
 export {}

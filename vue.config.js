@@ -32,8 +32,8 @@ module.exports = {
           require('postcss-pxtorem')({
             rootValue: 75,
             propList: ['*'],
-            exclue: ['node_modules'],
             exclude: /node_modules/i,
+            selectorBlackList: ['el-'],
             unitPrecision: 2
           })
         ]

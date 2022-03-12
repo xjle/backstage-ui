@@ -7,6 +7,8 @@ export default {
     state.isLogin = payload
   },
   SET_TOKEN: (state: IState, payload: string) => {
+    console.log(state, payload)
+
     state.token = payload
   },
   SET_USERINFO: (state: IState, payload: any) => {
