@@ -1,0 +1,17 @@
+{
+  "id": "3206543",
+  "name": "mall",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "统一大小：64
+默认颜色：#333333",
+  "glyphs": [
+    {
+      "icon_id": "5394536",
+      "name": "shop-car",
+      "font_class": "shop-car",
+      "unicode": "e64d",
+      "unicode_decimal": 58957
+    }
+  ]
+}
