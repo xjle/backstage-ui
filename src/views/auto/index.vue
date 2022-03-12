@@ -101,7 +101,7 @@ export default defineComponent({
       autoFormRef.value?.validateField('mail', () => null)
       if (mail) {
         codeFlag.value = true
-        getCode({ mail }).then((res) => {
+        getCode({ mail }).then((res:any) => {
           const { data } = res
           if (data.code === 200) {
             timer.value = setInterval(() => {
