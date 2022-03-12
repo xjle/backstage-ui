@@ -1,8 +1,8 @@
 # backstage-ui后台管理
-# template分支无功能
-# master分支生产分支
-# develop分支开发分支
-# 使用技术栈vue3+typescript+axios
+## template分支无功能
+## master分支生产分支
+## develop分支开发分支
+## 使用技术栈vue3+typescript+axios
 
 ## Project setup
 ```
