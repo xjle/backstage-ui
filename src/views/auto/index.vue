@@ -150,6 +150,9 @@ export default defineComponent({
       })
     }
     const changeAuto = () => {
+      clearInterval(timer.value)
+      codeFlag.value = false
+      time.value = TIME
       autoFlag.value = !autoFlag.value
       autoFormRef.value?.resetFields()
     }

@@ -9,3 +9,21 @@ a{
   text-decoration: none;
   color: #ffffff;
 }
+/* 滚动槽 */
+/* ::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset006pxrgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #a7a3a3;
+  -webkit-box-shadow: inset006pxrgba(0, 0, 0, 0.5);
+  
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #7c7878;
+} */

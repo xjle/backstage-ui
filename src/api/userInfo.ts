@@ -12,3 +12,6 @@ export const loginApi = (obj:any) => Axios.post(`${baseUrl}/auto/login/`, obj)
 
 // 注册
 export const registerApi = (obj:any) => Axios.post(`${baseUrl}/auto/register/`, obj)
+
+// 获取用户信息
+export const userInfoApi = () => Axios.get(`${baseUrl}/auto/`)

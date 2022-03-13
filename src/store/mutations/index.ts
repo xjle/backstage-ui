@@ -13,5 +13,8 @@ export default {
   },
   SET_USERINFO: (state: IState, payload: any) => {
     state.userInfo = payload
+  },
+  SET_URL_INDEX: (state: IState, payload: number) => {
+    state.urlIndex = payload
   }
 }

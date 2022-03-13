@@ -16,8 +16,8 @@ export default createStore({
     createPersistedState({
       storage: window.sessionStorage,
       reducer (val: any) {
-        const { isLogin, token, userInfo } = val
-        return { isLogin, token, userInfo }
+        const { isLogin, token, userInfo, urlIndex } = val
+        return { isLogin, token, userInfo, urlIndex }
       }
     })
   ]

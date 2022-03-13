@@ -9,7 +9,21 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/admin',
     name: 'Admin',
-    component: () => import('../views/admin/index.vue')
+    component: () => import('../layouts/index.vue'),
+    children: [
+      // {
+      //   path: '/userInfo',
+      //   redirect: 'userInfo'
+      // },
+      {
+        path: 'userInfo',
+        component: () => import('../views/userInfo/index.vue')
+      },
+      {
+        path: 'menu',
+        component: () => import('../views/menu/index.vue')
+      }
+    ]
   },
   {
     path: '/auto',
