@@ -1,4 +1,3 @@
-
 <template>
   <div class="auto">
     <el-card>
@@ -55,10 +54,11 @@
 </template>
 <script lang="ts">
 /* eslint-disable no-unused-expressions */
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { defineComponent, onBeforeUnmount, reactive, ref } from 'vue'
 import type { ElForm } from 'element-plus'
 import { IAutoForm } from '@/types/auto'
-import { getCode, loginApi, registerApi } from '../../api/userInfo'
+import { getCode, loginApi, registerApi } from '@/api/userInfo'
 import { useRouter } from 'vue-router'
 import { useStore } from 'vuex'
 import { ElMessage } from 'element-plus'

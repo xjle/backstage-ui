@@ -1,6 +1,11 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
+import store from '../store'
 
 const routes: Array<RouteRecordRaw> = [
+  {
+    path: '/',
+    redirect: '/admin'
+  },
   {
     path: '/admin',
     name: 'Admin',
@@ -20,6 +25,19 @@ const routes: Array<RouteRecordRaw> = [
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes
+})
+
+router.beforeEach((to) => {
+  if (to.path !== '/auto') {
+    const token = store.state.token
+    if (!token) {
+      return '/auto'
+    }
+  }
+  // 4使用
+  // if (to.path === '/main') {
+  //   return firstMenu.url
+  // }
 })
 
 export default router
