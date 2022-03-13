@@ -58,7 +58,7 @@
 import { defineComponent, onBeforeUnmount, reactive, ref } from 'vue'
 import type { ElForm } from 'element-plus'
 import { IAutoForm } from '@/types/auto'
-import { getCode, loginApi, registerApi } from '@/api/userInfo'
+import { getCode, loginApi, registerApi } from '../../api/userInfo'
 import { useRouter } from 'vue-router'
 import { useStore } from 'vuex'
 import { ElMessage } from 'element-plus'
