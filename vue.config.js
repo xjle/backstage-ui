@@ -30,7 +30,7 @@ module.exports = {
         plugins: [
           // eslint-disable-next-line @typescript-eslint/no-var-requires
           require('postcss-pxtorem')({
-            rootValue: 75,
+            rootValue: 192,
             propList: ['*'],
             exclude: /node_modules/i,
             selectorBlackList: ['el-'],

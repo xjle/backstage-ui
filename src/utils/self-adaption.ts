@@ -1,3 +1,4 @@
+// 不使用
 export const fun = function (doc: Document, win: Window & typeof globalThis):void {
   const docEl = doc.documentElement
   const resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize'

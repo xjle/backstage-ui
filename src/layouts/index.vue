@@ -36,17 +36,22 @@ export default defineComponent({
 <style lang="less" scoped>
 .main {
   height: 100%;
+  width: 100% /* 1920/16 */;
+  min-width: 51.125rem /* 818/16 */;
 
   .el-header {
     height: 4.25rem /* 68/16 */;
-    background: pink;
   }
   .container {
+    height: calc(100% - 4.25rem);
     .el-aside {
-      width: 13%;
+      width: 13.125rem /* 210/16 */;
+      height: 100%;
     }
     .el-main {
-      height: calc(100% - 68px);
+      width: calc(100% - 13.125rem /* 210/16 */ );
+      overflow: auto;
+      background: pink;
     }
   }
 }

@@ -166,6 +166,7 @@ export default defineComponent({
       autoForm,
       autoRules,
       codeFlag,
+      autoDisabled,
       time,
       onSubmit,
       onGetCode,

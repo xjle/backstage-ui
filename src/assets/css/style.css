@@ -4,14 +4,16 @@ body,
   margin: 0;
   padding: 0;
   height: 100%;
+  width: 100%;
 }
 a{
   text-decoration: none;
   color: #ffffff;
 }
+
 /* 滚动槽 */
-/* ::-webkit-scrollbar {
-  width: 12px;
+::-webkit-scrollbar {
+  width: .75rem /* 12/16 */;
 }
 
 ::-webkit-scrollbar-track {
@@ -26,4 +28,4 @@ a{
 }
 ::-webkit-scrollbar-thumb:hover {
   background: #7c7878;
-} */
+}

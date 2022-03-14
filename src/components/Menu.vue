@@ -1,23 +1,24 @@
 <template>
-  <el-menu
-    active-text-color="#ffd04b"
-    background-color="#545c64"
-    class="el-menu-vertical"
-    text-color="#fff"
-    style="height: 100%"
-    :default-active="urlIndex + ''"
-  >
-    <template v-for="(item, index) in userMenus" :key="item.mid">
-      <el-menu-item
-        :index="index + ''"
-        @click="handleItemClick(item.url, index)"
-      >
-        <i v-if="item.icon" :class="item.icon"></i>
-        <el-icon v-else><icon-menu /></el-icon>
-        <span>{{ item.name }}</span>
-      </el-menu-item>
-    </template>
-    <!-- <template v-for="item in userMenus" :key="item.id">
+  <div class="menu">
+    <el-menu
+      active-text-color="#ffd04b"
+      background-color="#545c64"
+
+      text-color="#fff"
+      style="height: 100%"
+      :default-active="urlIndex + ''"
+    >
+      <template v-for="(item, index) in userMenus" :key="item.mid">
+        <el-menu-item
+          :index="index + ''"
+          @click="handleItemClick(item.url, index)"
+        >
+          <i v-if="item.icon" :class="item.icon"></i>
+          <el-icon v-else><icon-menu /></el-icon>
+          <span>{{ item.name }}</span>
+        </el-menu-item>
+      </template>
+      <!-- <template v-for="item in userMenus" :key="item.id">
           <template v-if="item.type === 1">
             <el-sub-menu :index="item.id + ''">
               <template #title>
@@ -42,7 +43,8 @@
             </el-menu-item>
           </template>
         </template> -->
-  </el-menu>
+    </el-menu>
+  </div>
 </template>
 <script lang="ts">
 import { computed, defineComponent } from 'vue'
@@ -72,3 +74,13 @@ export default defineComponent({
   }
 })
 </script>
+<style lang="less" scoped>
+.menu{
+  height: 100%;
+  width: 100%;
+  // /deep/ .el-menu-item{
+  //   width: 100%;
+
+  // }
+}
+</style>

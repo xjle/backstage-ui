@@ -14,8 +14,6 @@ declare global {
   const ElMain: typeof import('element-plus/es')['ElMain']
   const ElMenu: typeof import('element-plus/es')['ElMenu']
   const ElMenuItem: typeof import('element-plus/es')['ElMenuItem']
-  const ElMenuItemGroup: typeof import('element-plus/es')['ElMenuItemGroup']
   const ElResult: typeof import('element-plus/es')['ElResult']
-  const ElSubMenu: typeof import('element-plus/es')['ElSubMenu']
 }
 export {}
